@@ -1,3 +1,13 @@
+#   Clicking on the first link in the main text of a Wikipedia article, and then repeating the process 
+#   for subsequent articles, will usually lead to the Philosophy article. As of February 2016, 97% of all 
+#   articles in Wikipedia eventually lead to the article Philosophy. One major loop was found 
+#   in the past: the knowledge article led to facts, facts to experience, experience back to knowledge.
+#   However, as of July 7, 2017, the facts article has been changed to link to verifiability, verifiability 
+#   to verificationism, and verificationism to philosophy.(https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy)
+
+#   This Selenium Script opens chrome and navigates to given wikipedia page and then repeats the above said process
+#   until the page on Philosophy is reached.
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
