@@ -2,13 +2,13 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
-a = int(raw_input("Enter 1 for German, 2 for French and 3 for Bengali : "))
+a = int(raw_input("Enter 1 for German, 2 for French and 3 for any other language: "))
 if a == 1:
     k="German"
 elif a==2:
     k=="French"
 else:
-    k="Bengali"
+    k=raw_input("Enter Language of your choice: ")
 string=raw_input("Enter Text to Translate  : ")
 
 driver = webdriver.Chrome("C:\\Python27\\selenium\\chromedriver_win32\\chromedriver.exe")         #path to chromedriver
