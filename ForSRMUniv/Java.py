@@ -37,7 +37,7 @@ for i in range(100):
 		driver.implicitly_wait(50)
 		btn2.click()
 		driver.implicitly_wait(50)
-	except TimeoutException:
+	except :
 		print("Skipped ",i)
 
 driver.quit()
