@@ -1,9 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
-import time
 from selenium.webdriver.common.by import By
+import time
 
 driver = webdriver.Chrome("C:\Python35\selenium\webdriver\chromedriver.exe")
 driver.set_page_load_timeout(20)
